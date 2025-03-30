@@ -4,73 +4,100 @@
 ![Node Version](https://img.shields.io/badge/Node.js-16%2B-green)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-美股行情监控与分析平台，集成价格追踪、技术指标可视化及历史数据回溯功能。
+A comprehensive stock market monitoring and analysis platform featuring real-time price tracking, technical indicator visualization, and historical data analysis capabilities.
 
 ![Platform Preview](https://github.com/user-attachments/assets/bcfeb363-f93a-4d39-8ba5-d7b4b5e111e2)
 
 ---
-## 🚀 快速开始
+## 🚀 Quick Start
 
-✅ 已验证兼容版本：
+✅ Verified compatible versions:
 - Python 3.9.13 
 - Node.js v16.14.2+
 - npm 8.5.0+
 
-ℹ️ 更低/更高版本可能正常工作，但未经全面测试
+ℹ️ Lower/higher versions may work but are not fully tested
 
+## 🛠 Installation Guide
 
-## 🛠 安装指南
-
-### 1. 克隆仓库
+### 1. Clone the Repository
 ```bash
 git clone https://github.com/Julie3399/stock_monitor.git
 cd stock-monitor
 ```
-### 2. 初始化环境
+
+### 2. Initialize Environment
 ```bash
 bash setup.sh
 ```
-📌 脚本将自动完成：
-- Python依赖安装
-- Node模块安装
+📌 The script will automatically:
+- Install Python dependencies
+- Install Node.js modules
 
-## 🔥 使用指南
-启动系统
+## 🔥 Usage Guide
+Start the system
 ```bash
 python run.py
 ```
-📌 脚本将自动完成：
-- 启动后端服务
-- 启动前端服务
-- 自动打开浏览器并显示平台界面
+📌 The script will automatically:
+- Start the backend service
+- Start the frontend service
+- Open your browser and display the platform interface
   
 ---
-## 🧩 技术架构
+## 🧩 Technical Architecture
 
-| 组件   | 技术栈                       |
-|--------|----------------------------|
-| 后端   | Python + FastAPI           | 
-| 前端   | React + TypeScript       | 
-| 可视化 |  react-tradingview-widget      | 
-| 数据源 | yfinance     | 
+| Component | Tech Stack                    |
+|-----------|------------------------------|
+| Backend   | Python + FastAPI            | 
+| Frontend  | React + TypeScript          | 
+| Charts    | react-tradingview-widget    | 
+| Data Source | yfinance                  | 
+
+## ✨ Features
+
+- Real-time stock price monitoring
+- Technical indicator visualization
+- Historical data analysis
+- Custom watchlist management
+- Market relationship tracking
+- Daily task management
+- Interactive charts and graphs
+- Responsive and modern UI
+
+## 🔧 Development
+
+### Backend Development
+```bash
+cd backend
+uvicorn main:app --reload --port 8002
+```
+
+### Frontend Development
+```bash
+cd frontend
+npm start
+```
+
+The frontend will be available at http://localhost:3000
 
 ---
-## ⚠️ 免责声明
+## ⚠️ Disclaimer
 
-📌 **重要法律声明** 
+📌 **Important Legal Notice** 
 
-本工具**不构成任何投资建议**，使用者应：
+This tool does **not constitute any investment advice**. Users should:
 
-🔍 自行验证数据准确性
+🔍 Verify data accuracy independently
 
-💼 咨询专业财务顾问
+💼 Consult with professional financial advisors
 
-⚖️ 承担全部操作风险
+⚖️ Take full responsibility for all trading decisions
 
-📉 理解市场波动性
+📉 Understand market volatility
 
-作者不对因使用本软件导致的直接/间接损失承担法律责任。
+The author is not liable for any direct/indirect losses incurred through the use of this software.
 
 ---
-## 🤝 贡献指南
-欢迎提交PR，请创建issue讨论重大改动
+## 🤝 Contributing
+Contributions are welcome! Please create an issue to discuss major changes before submitting pull requests.
