@@ -18,10 +18,17 @@ const Header: React.FC = () => {
     return (
         <div className="header">
             <div className="logo">
-                <Link to="/" className="personal-1" onClick={closeMenu}>MarketVision</Link>
+                <Link to="/" className="personal-1" onClick={closeMenu}>MarketInner</Link>
             </div>
             <HamburgerButton onClick={toggleMenu} isOpen={isOpen} />
             <nav className={`taskbaar ${isOpen ? 'open' : ''}`}>
+                <Link 
+                    to="/RiskManagement" 
+                    className={`link ${location.pathname === '/RiskManagement' ? 'active' : ''}`} 
+                    onClick={closeMenu}
+                >
+                    Risk Management
+                </Link>
                 <Link 
                     to="/" 
                     className={`link ${location.pathname === '/' ? 'active' : ''}`} 
@@ -43,6 +50,7 @@ const Header: React.FC = () => {
                 >
                     Contact Me
                 </Link>
+
             </nav>
             {isOpen && <div className="overlay" onClick={closeMenu} />}
         </div>

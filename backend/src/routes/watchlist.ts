@@ -43,7 +43,7 @@ router.post('/add', async (req, res) => {
 });
 
 // 删除股票
-router.delete('/:group/:symbol', async (req: express.Request, res: express.Response) => {
+router.delete('/:group/:symbol', async (req, res) => {
   try {
     const { group, symbol } = req.params;
     const watchlist = await readWatchlist();
